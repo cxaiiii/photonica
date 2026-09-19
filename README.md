@@ -17,6 +17,7 @@ Build laser → glass → screen experiments, measure them like an instrument, d
 - **Lens design.** A damped-least-squares optimiser (curvatures, thicknesses, spacings, conics) plus sensitivity and Monte-Carlo tolerancing, with collision checks for unbuildable designs. Imports Zemax `.zmx` lens files.
 - **Photoreal mode.** A spectral path tracer with caustics, haze and bloom.
 - **Video.** A camera timeline with reel (9:16), square, 16:9 and 4K formats, rendered to mp4, with optional burned-in stats and watermark.
+- **Assistant control.** An MCP server lets AI assistants build, measure and render with you.
 - **Projects and community.** Save benches as `.photonica` files and open shared ones straight from a link or from Community > Browse.
 
 | Lens design & tolerancing | Young's double slit |
@@ -26,6 +27,16 @@ Build laser → glass → screen experiments, measure them like an instrument, d
 | Render timeline (reel format) | Light in flight |
 |---|---|
 | ![Render timeline](docs/render.jpg) | ![Light in flight, with stats](docs/light-in-flight.jpg) |
+
+## Works with AI assistants (MCP)
+
+Photonica ships with an [MCP](https://modelcontextprotocol.io) server, `photonica-mcp.exe`, so an assistant like Claude can drive the open app: build and edit benches, read measurements, trace rays, autofocus, optimise and tolerance lenses, take screenshots, and render videos.
+
+```bash
+claude mcp add photonica -- "C:\path\to\Photonica\photonica-mcp.exe"
+```
+
+For Claude Desktop, add `"photonica": { "command": "C:\\path\\to\\Photonica\\photonica-mcp.exe" }` under `mcpServers`. The connection is local to your PC, and you can switch it off under **View > Allow assistant control**.
 
 ## Requirements
 

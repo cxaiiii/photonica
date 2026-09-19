@@ -1,0 +1,169 @@
+{
+ "format": "photonica-project",
+ "version": 1,
+ "title": "Dark Side of the Moon",
+ "author": "Chaii",
+ "description": "A white beam through a dense flint (SF11) prism in photoreal mode: the classic album cover, from real dispersion.",
+ "link": "",
+ "units": "millimetres, degrees, nanometres; +Y up, yaw about +Y, an element's local +X is its optical axis",
+ "source": {
+  "type": "laser",
+  "spectrum": "white",
+  "wavelength_nm": 532,
+  "beam_diameter": 2.5,
+  "cone_deg": 6,
+  "brightness": 1,
+  "power_mW": 5,
+  "polarisation": 0,
+  "polarisation_deg": 0,
+  "pulse_ps": 1,
+  "beam_lines": 3,
+  "position": [
+   0,
+   100,
+   0
+  ],
+  "yaw_deg": 0
+ },
+ "elements": [
+  {
+   "type": "Prism",
+   "name": "Prism",
+   "position": [
+    250,
+    100,
+    0
+   ],
+   "yaw_deg": 33,
+   "R1": 100,
+   "R2": -100,
+   "thickness": 8,
+   "diameter": 40,
+   "size": [
+    20,
+    50,
+    50
+   ],
+   "apex_deg": 60,
+   "side": 60,
+   "height": 60,
+   "conic": [
+    0,
+    0
+   ],
+   "asph_front_A4_A6_A8_A10": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "asph_back_A4_A6_A8_A10": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "cyl_axis": 0,
+   "radius": 15,
+   "reflectivity": 0.949999988,
+   "hole": 10,
+   "axis_deg": 0,
+   "retardance_waves": 0.25,
+   "lines_per_mm": 600,
+   "phase_depth": 1.84000003,
+   "reflective": false,
+   "order": 1,
+   "slits": 2,
+   "slit_width": 0.0500000007,
+   "slit_spacing": 0.25,
+   "slit_height": 10,
+   "temperature_C": 20,
+   "material": {
+    "name": "Dense Flint SF11",
+    "source": "built-in",
+    "nd": 1.78471422,
+    "dispersion": 0.0305703878,
+    "formula": 1,
+    "sellmeier_or_schott_B": [
+     1.73759699,
+     0.313747346,
+     1.89878106,
+     0
+    ],
+    "sellmeier_or_schott_C": [
+     0.0131887067,
+     0.0623068139,
+     155.236298,
+     0
+    ],
+    "absorption": 0,
+    "roughness": 0,
+    "transmission": 1,
+    "filter_center": 550,
+    "filter_width": 0
+   },
+   "coating": {
+    "name": "None",
+    "layers": []
+   }
+  }
+ ],
+ "screens": [],
+ "camera": {
+  "target": [
+   300,
+   100,
+   -60
+  ],
+  "yaw_deg": 90,
+  "pitch_deg": 72,
+  "distance": 520,
+  "fov_deg": 40
+ },
+ "view": {
+  "photo": true,
+  "haze": 0.0599999987,
+  "laser_power": 9000,
+  "key_light": 0.150000006,
+  "studio_lights": 0.25,
+  "bloom": 0.600000024,
+  "aperture": 0,
+  "exposure": 1,
+  "screen_exposure": 2.5,
+  "wave_screens": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "light_in_flight": false,
+  "pulse_ps": 25,
+  "trail": 0.0500000007,
+  "selected": 0,
+  "measured_screen": 0,
+  "playback_ps_per_s": 250,
+  "loop_auto": true,
+  "loop_start_ps": 0,
+  "loop_end_ps": 2000,
+  "screens_during_pulse": 1
+ },
+ "timeline": {
+  "duration_s": 6,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "samples_per_frame": 16,
+  "crf": 16,
+  "overlay_stats": false,
+  "stats_corner": 0,
+  "stats_size_pct": 3,
+  "watermark": true,
+  "watermark_corner": 3,
+  "watermark_size_pct": 9,
+  "track_camera": true,
+  "track_light_in_flight": false,
+  "track_wavelength": false,
+  "ease_ends": true,
+  "keys": []
+ }
+}

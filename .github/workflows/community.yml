@@ -1,0 +1,39 @@
+name: community
+
+on:
+  pull_request:
+    paths: ["community/projects/**"]
+  push:
+    branches: [main]
+    paths: ["community/projects/**", "tools/build_gallery.py"]
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python tools/build_gallery.py --check
+
+  gallery:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: python tools/build_gallery.py
+      - name: Commit the gallery
+        run: |
+          if ! git diff --quiet community/gallery.json; then
+            git config user.name "photonica-gallery"
+            git config user.email "photonica-gallery@users.noreply.github.com"
+            git add community/gallery.json
+            git commit -m "Update community gallery"
+            git push
+          fi

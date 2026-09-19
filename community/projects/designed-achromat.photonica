@@ -1,0 +1,390 @@
+{
+ "format": "photonica-project",
+ "version": 1,
+ "title": "Design an achromat",
+ "author": "Chaii",
+ "description": "Crown + flint doublet optimised to f = 100 mm with the F-C colour error nulled (Design tab: run it again, then tolerance it).",
+ "link": "",
+ "units": "millimetres, degrees, nanometres; +Y up, yaw about +Y, an element's local +X is its optical axis",
+ "source": {
+  "type": "laser",
+  "spectrum": "white",
+  "wavelength_nm": 532,
+  "beam_diameter": 16,
+  "cone_deg": 6,
+  "brightness": 1,
+  "power_mW": 5,
+  "polarisation": 0,
+  "polarisation_deg": 0,
+  "pulse_ps": 1,
+  "beam_lines": 7,
+  "position": [
+   0,
+   100,
+   0
+  ],
+  "yaw_deg": 0
+ },
+ "elements": [
+  {
+   "type": "CustomLens",
+   "name": "Custom lens",
+   "position": [
+    200,
+    100,
+    0
+   ],
+   "yaw_deg": 0,
+   "R1": 42.9486618,
+   "R2": -44.2065735,
+   "thickness": 6,
+   "diameter": 25,
+   "size": [
+    20,
+    50,
+    50
+   ],
+   "apex_deg": 60,
+   "side": 40,
+   "height": 40,
+   "conic": [
+    0,
+    0
+   ],
+   "asph_front_A4_A6_A8_A10": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "asph_back_A4_A6_A8_A10": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "cyl_axis": 0,
+   "radius": 15,
+   "reflectivity": 0.949999988,
+   "hole": 10,
+   "axis_deg": 0,
+   "retardance_waves": 0.25,
+   "lines_per_mm": 600,
+   "phase_depth": 1.84000003,
+   "reflective": false,
+   "order": 1,
+   "slits": 2,
+   "slit_width": 0.0500000007,
+   "slit_spacing": 0.25,
+   "slit_height": 10,
+   "temperature_C": 20,
+   "material": {
+    "name": "BK7",
+    "source": "built-in",
+    "nd": 1.51679838,
+    "dispersion": 0.00805711746,
+    "formula": 1,
+    "sellmeier_or_schott_B": [
+     1.03961217,
+     0.231792346,
+     1.01046944,
+     0
+    ],
+    "sellmeier_or_schott_C": [
+     0.00600069854,
+     0.0200179145,
+     103.560654,
+     0
+    ],
+    "absorption": 0,
+    "roughness": 0,
+    "transmission": 1,
+    "filter_center": 550,
+    "filter_width": 0
+   },
+   "coating": {
+    "name": "None",
+    "layers": []
+   }
+  },
+  {
+   "type": "CustomLens",
+   "name": "Custom lens",
+   "position": [
+    204.699997,
+    100,
+    0
+   ],
+   "yaw_deg": 0,
+   "R1": -43.3914413,
+   "R2": -1498.54358,
+   "thickness": 3,
+   "diameter": 25,
+   "size": [
+    20,
+    50,
+    50
+   ],
+   "apex_deg": 60,
+   "side": 40,
+   "height": 40,
+   "conic": [
+    0,
+    0
+   ],
+   "asph_front_A4_A6_A8_A10": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "asph_back_A4_A6_A8_A10": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "cyl_axis": 0,
+   "radius": 15,
+   "reflectivity": 0.949999988,
+   "hole": 10,
+   "axis_deg": 0,
+   "retardance_waves": 0.25,
+   "lines_per_mm": 600,
+   "phase_depth": 1.84000003,
+   "reflective": false,
+   "order": 1,
+   "slits": 2,
+   "slit_width": 0.0500000007,
+   "slit_spacing": 0.25,
+   "slit_height": 10,
+   "temperature_C": 20,
+   "material": {
+    "name": "Flint Glass",
+    "source": "built-in",
+    "nd": 1.62003684,
+    "dispersion": 0.0170567036,
+    "formula": 1,
+    "sellmeier_or_schott_B": [
+     1.34533358,
+     0.209073171,
+     0.937357187,
+     0
+    ],
+    "sellmeier_or_schott_C": [
+     0.00997743849,
+     0.0470450781,
+     111.886765,
+     0
+    ],
+    "absorption": 0,
+    "roughness": 0,
+    "transmission": 1,
+    "filter_center": 550,
+    "filter_width": 0
+   },
+   "coating": {
+    "name": "None",
+    "layers": []
+   }
+  }
+ ],
+ "screens": [
+  {
+   "position": [
+    300.721008,
+    100,
+    0
+   ],
+   "yaw_deg": 0,
+   "width": 120,
+   "height": 120
+  }
+ ],
+ "camera": {
+  "target": [
+   260,
+   100,
+   0
+  ],
+  "yaw_deg": 105,
+  "pitch_deg": 30.0000019,
+  "distance": 330,
+  "fov_deg": 40
+ },
+ "view": {
+  "photo": false,
+  "haze": 0.0199999996,
+  "laser_power": 4000,
+  "key_light": 1.20000005,
+  "studio_lights": 1,
+  "bloom": 0.600000024,
+  "aperture": 0,
+  "exposure": 1,
+  "screen_exposure": 2.5,
+  "wave_screens": [
+   false,
+   false,
+   false,
+   false
+  ],
+  "light_in_flight": false,
+  "pulse_ps": 25,
+  "trail": 0.0500000007,
+  "selected": 0,
+  "measured_screen": 0,
+  "playback_ps_per_s": 250,
+  "loop_auto": true,
+  "loop_start_ps": 0,
+  "loop_end_ps": 2000,
+  "screens_during_pulse": 1
+ },
+ "design": {
+  "variables": [
+   {
+    "kind": "curv1",
+    "target": 0,
+    "lo": -0.0769230769231,
+    "hi": 0.0769230769231
+   },
+   {
+    "kind": "curv2",
+    "target": 0,
+    "lo": -0.0769230769231,
+    "hi": 0.0769230769231
+   },
+   {
+    "kind": "curv1",
+    "target": 1,
+    "lo": -0.0769230769231,
+    "hi": 0.0769230769231
+   },
+   {
+    "kind": "curv2",
+    "target": 1,
+    "lo": -0.0769230769231,
+    "hi": 0.0769230769231
+   },
+   {
+    "kind": "screen_axial",
+    "target": 0,
+    "lo": 220,
+    "hi": 420
+   }
+  ],
+  "operands": [
+   {
+    "kind": "spot_screen",
+    "target": 0,
+    "weight": 1,
+    "screen": 0
+   },
+   {
+    "kind": "efl",
+    "target": 100,
+    "weight": 0.05,
+    "screen": 0
+   },
+   {
+    "kind": "chromatic_focus",
+    "target": 0,
+    "weight": 1,
+    "screen": 0
+   }
+  ],
+  "tolerances": [
+   {
+    "kind": "radius1",
+    "element": 0,
+    "tolerance": 0.005
+   },
+   {
+    "kind": "radius2",
+    "element": 0,
+    "tolerance": 0.005
+   },
+   {
+    "kind": "thickness",
+    "element": 0,
+    "tolerance": 0.05
+   },
+   {
+    "kind": "decenter_x",
+    "element": 0,
+    "tolerance": 0.05
+   },
+   {
+    "kind": "decenter_y",
+    "element": 0,
+    "tolerance": 0.05
+   },
+   {
+    "kind": "axial",
+    "element": 0,
+    "tolerance": 0.1
+   },
+   {
+    "kind": "tilt",
+    "element": 0,
+    "tolerance": 0.1
+   },
+   {
+    "kind": "radius1",
+    "element": 1,
+    "tolerance": 0.005
+   },
+   {
+    "kind": "thickness",
+    "element": 1,
+    "tolerance": 0.05
+   },
+   {
+    "kind": "decenter_x",
+    "element": 1,
+    "tolerance": 0.05
+   },
+   {
+    "kind": "decenter_y",
+    "element": 1,
+    "tolerance": 0.05
+   },
+   {
+    "kind": "axial",
+    "element": 1,
+    "tolerance": 0.1
+   },
+   {
+    "kind": "tilt",
+    "element": 1,
+    "tolerance": 0.1
+   }
+  ],
+  "tolerance_settings": {
+   "criterion": "spot_screen",
+   "criterion_screen": 0,
+   "refocus": true,
+   "trials": 200,
+   "gaussian": false,
+   "seed": 12345
+  }
+ },
+ "timeline": {
+  "duration_s": 6,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "samples_per_frame": 16,
+  "crf": 16,
+  "overlay_stats": false,
+  "stats_corner": 0,
+  "stats_size_pct": 3,
+  "watermark": true,
+  "watermark_corner": 3,
+  "watermark_size_pct": 9,
+  "track_camera": true,
+  "track_light_in_flight": false,
+  "track_wavelength": false,
+  "ease_ends": true,
+  "keys": []
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "format": "photonica-gallery",
+ "version": 1,
+ "projects": [
+  {
+   "title": "Dark Side of the Moon",
+   "author": "Chaii",
+   "description": "A white beam through a dense flint (SF11) prism in photoreal mode: the classic album cover, from real dispersion.",
+   "url": "https://raw.githubusercontent.com/cxaiiii/photonica/main/community/projects/dark-side-of-the-moon.photonica",
+   "parts": 1
+  },
+  {
+   "title": "Design an achromat",
+   "author": "Chaii",
+   "description": "Crown + flint doublet optimised to f = 100 mm with the F-C colour error nulled (Design tab: run it again, then tolerance it).",
+   "url": "https://raw.githubusercontent.com/cxaiiii/photonica/main/community/projects/designed-achromat.photonica",
+   "parts": 2
+  },
+  {
+   "title": "Grating spectrometer",
+   "author": "Chaii",
+   "description": "A 600 lines/mm grating, a lens and a screen: a working spectrometer. The first order lands at 18.6 degrees for 532 nm.",
+   "url": "https://raw.githubusercontent.com/cxaiiii/photonica/main/community/projects/grating-spectrometer.photonica",
+   "parts": 2
+  },
+  {
+   "title": "Light in flight",
+   "author": "Chaii",
+   "description": "A pulse of light crossing the bench, slowed down about two billion times. Comes with a ready camera move: Render tab.",
+   "url": "https://raw.githubusercontent.com/cxaiiii/photonica/main/community/projects/light-in-flight.photonica",
+   "parts": 2
+  },
+  {
+   "title": "Prism",
+   "author": "Chaii",
+   "description": "White light split by a 60 degree flint prism onto a screen. Turn on light in flight (Waves tab) to watch blue arrive after red.",
+   "url": "https://raw.githubusercontent.com/cxaiiii/photonica/main/community/projects/prism-rainbow.photonica",
+   "parts": 1
+  },
+  {
+   "title": "Young's double slit",
+   "author": "Chaii",
+   "description": "Young's double slit in wave mode: 0.05 mm slits 0.25 mm apart, 532 nm. Fringe spacing matches lambda L / d.",
+   "url": "https://raw.githubusercontent.com/cxaiiii/photonica/main/community/projects/youngs-double-slit.photonica",
+   "parts": 1
+  }
+ ]
+}

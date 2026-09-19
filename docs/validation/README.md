@@ -1,6 +1,6 @@
 # Photonica Validation Suite
 
-33 canonical optics experiments, each checked against a closed-form or textbook reference and run end to end through Photonica's own scripting interface (MCP) against v0.2.3.
+33 canonical optics experiments, each checked against a closed-form or textbook reference and run end to end through Photonica's own scripting interface (MCP) against v0.2.4.
 
 **Result: 33 / 33 passed.**
 

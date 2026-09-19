@@ -50,7 +50,7 @@ Unzip and run `Photonica.exe`. Start from the **Demos** menu.
 
 ## Validation
 
-Photonica is checked against closed-form optics: Snell's law, Fresnel reflectance, Brewster's angle, total internal reflection, the thick-lens equation, prism deviation, chromatic aberration and Abbe number, achromatic doublets, Malus's law, wave plates, diffraction gratings, telescope magnification, and the spherical-aberration cube law. 33 checks, run end to end through the same MCP interface an assistant uses. **33 / 33 passed** as of v0.2.3 - see the [validation suite](docs/validation/README.md).
+Photonica is checked against closed-form optics: Snell's law, Fresnel reflectance, Brewster's angle, total internal reflection, the thick-lens equation, prism deviation, chromatic aberration and Abbe number, achromatic doublets, Malus's law, wave plates, diffraction gratings, telescope magnification, and the spherical-aberration cube law. 33 checks, run end to end through the same MCP interface an assistant uses. **33 / 33 passed** as of v0.2.4 - see the [validation suite](docs/validation/README.md).
 
 ## Community
 

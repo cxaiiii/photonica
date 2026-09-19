@@ -15,6 +15,7 @@ Build laser → glass → screen experiments, measure them like an instrument, d
 - **Waves and polarisation.** Double slits and pinholes computed as Huygens–Fresnel sums, diffraction gratings, polarisers and waveplates (Jones fields, Stokes readout), and PSF / Strehl / MTF.
 - **Time of flight.** Group-delay timing on every path. Watch a pulse cross the bench slowed down billions of times, with screens lighting up only when the light actually arrives.
 - **Lens design.** A damped-least-squares optimiser (curvatures, thicknesses, spacings, conics) plus sensitivity and Monte-Carlo tolerancing, with collision checks for unbuildable designs. Imports Zemax `.zmx` lens files.
+- **Undo / redo, and a proper title bar.** Every edit undoes and redoes, from dragging to the assistant's own MCP changes.
 - **Blender-style editing.** Move arrows and yaw / pitch / roll rotation rings on any part, the laser or a screen, with snapping and world or local axes.
 - **Photoreal mode.** A spectral path tracer with caustics, haze and bloom.
 - **Video.** A camera timeline with reel (9:16), square, 16:9 and 4K formats, rendered to mp4, with optional burned-in stats and watermark.

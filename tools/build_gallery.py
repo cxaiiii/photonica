@@ -9,8 +9,11 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PROJECTS = ROOT / "community" / "projects"
+THUMBS = ROOT / "community" / "thumbs"
 GALLERY = ROOT / "community" / "gallery.json"
 RAW = "https://raw.githubusercontent.com/cxaiiii/photonica/main/community/projects/"
+RAW_THUMBS = "https://raw.githubusercontent.com/cxaiiii/photonica/main/community/thumbs/"
+MAX_THUMB_BYTES = 400 * 1024
 MAX_BYTES = 2 * 1024 * 1024
 
 
@@ -49,6 +52,16 @@ def check(path):
         "url": RAW + path.name,
         "parts": len(elems) if isinstance(elems, list) else 0,
     }
+    # community/thumbs/<same name>.jpg, if the author supplied one: shown as the card's preview
+    for ext in (".jpg", ".png"):
+        thumb = THUMBS / (path.stem + ext)
+        if not thumb.exists():
+            continue
+        if thumb.stat().st_size > MAX_THUMB_BYTES:
+            problems.append(f"{thumb.name}: larger than {MAX_THUMB_BYTES // 1024} KB")
+        else:
+            entry["thumb"] = RAW_THUMBS + thumb.name
+        break
     return entry, problems
 
 

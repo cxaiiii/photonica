@@ -2,10 +2,10 @@ name: community
 
 on:
   pull_request:
-    paths: ["community/projects/**"]
+    paths: ["community/projects/**", "community/thumbs/**"]
   push:
     branches: [main]
-    paths: ["community/projects/**", "tools/build_gallery.py"]
+    paths: ["community/projects/**", "community/thumbs/**", "tools/build_gallery.py"]
 
 permissions:
   contents: write
